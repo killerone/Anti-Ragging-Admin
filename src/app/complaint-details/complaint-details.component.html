@@ -1,0 +1,25 @@
+<div class="container mt-2">
+    <div class="modal-header">
+        <h4 class="modal-title text-center" id="modal-basic-title">Complaint Details</h4>
+        <button type="button" class="close" aria-label="Close" (click)="activeModal.close('Close click')">
+            <span aria-hidden="true" style="color: red;">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col px-0">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr *ngFor="let i of keys">
+                            <td class="col-xs-4 text-capitalize font-weight-bold" style="font-size: 90%;"> {{i}} </td>
+                            <td *ngIf="i !== 'date' else date" class="text-capitalize col" style="font-size: 90%;"> {{complaint[i]}} </td>
+                            <ng-template #date>
+                                <td class="text-capitalize col" style="font-size: 90%;"> {{complaint[i] | date}} </td>
+                            </ng-template>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

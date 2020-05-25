@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyC3-Axawd5FAef0WmbOrqnnjOXIk8DFEho",
+    authDomain: "chatbot-rektta.firebaseapp.com",
+    databaseURL: "https://chatbot-rektta.firebaseio.com",
+    projectId: "chatbot-rektta",
+    storageBucket: "chatbot-rektta.appspot.com",
+    messagingSenderId: "92583685799",
+    appId: "1:92583685799:web:664eb197d32c8fec9d7582",
+    measurementId: "G-VYZLMFGCC0"
+  }
 };
 
 /*

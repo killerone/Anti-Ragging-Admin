@@ -1,0 +1,42 @@
+.fill{
+    height: 41rem;
+    background-color: #8e9aaf;
+}
+
+.card{
+    height: 25rem;
+    width: 25rem;
+}
+.form-class{
+    padding: 2rem;
+}
+
+.fa{
+    color:#5e6472;
+    font-size:1.5rem;
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+
+.txt-styling{
+    letter-spacing: 1px;
+}
+
+button{
+    font-weight: 600;
+}
+
+.form-control:focus{
+    border: none;
+}
+span > img{
+    height: 1.5rem;
+    color:red;
+}
+

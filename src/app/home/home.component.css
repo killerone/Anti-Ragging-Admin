@@ -1,0 +1,27 @@
+.navbar-brand{
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.navbar{
+    background-color: #283d3b;
+}
+
+.main{
+    margin-top: 6rem;
+}
+
+.txt-styling{
+    letter-spacing: 1px;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #fff;
+}
