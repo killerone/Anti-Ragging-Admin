@@ -30,9 +30,9 @@
             <tbody>
                 <tr *ngFor="let complaint of complaints;let i = index">
                     <th  scope="row">{{i+1}}</th>
-                    <td class="text-capitalize">{{complaint.complaintBy}}</td>
-                    <td class="text-capitalize">{{complaint.type}}</td>
-                    <td>{{complaint.date | date}}</td>
+                    <td class="text-capitalize">{{complaint.name}}</td>
+                    <td class="text-capitalize">{{complaint.prtype}}</td>
+                    <td>{{complaint.cdate | date}}</td>
                     <td><button class="btn btn-outline-secondary txt-styling" (click)="open(complaint)">DETAILS</button>
                     </td>
                 </tr>

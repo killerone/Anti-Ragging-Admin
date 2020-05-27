@@ -12,6 +12,10 @@ export class LoginComponent implements OnInit {
   constructor(private db: AngularFireDatabase, private afAuth: AngularFireAuth) { }
 
   ngOnInit(): void {
+    // this.db.list("data").valueChanges().subscribe(data =>{
+    //   console.log(data)
+    // })
+
     // this.db.list("users").update("vWA35MsyJsWI9Q06Xudhlao1nCV2", {
     //   name: "Admin",
     //   isAdmin: true
@@ -32,4 +36,5 @@ export class LoginComponent implements OnInit {
       });
   }
 
+  
 }

@@ -10,13 +10,50 @@
             <div class="col px-0">
                 <table class="table table-bordered">
                     <tbody>
-                        <tr *ngFor="let i of keys">
-                            <td class="col-xs-4 text-capitalize font-weight-bold" style="font-size: 90%;"> {{i}} </td>
-                            <td *ngIf="i !== 'date' else date" class="text-capitalize col" style="font-size: 90%;"> {{complaint[i]}} </td>
-                            <ng-template #date>
-                                <td class="text-capitalize col" style="font-size: 90%;"> {{complaint[i] | date}} </td>
-                            </ng-template>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">Name</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['name']}}</td>
                         </tr>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">College</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['college']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">Branch</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['branch']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">Year</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['year']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">What happend?</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['prtype']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">Description</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['desc']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">When happend?</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['when'] | date}}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">Who did it?</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['who']}}</td>
+                        </tr>
+                        <tr>
+                            <td class="col-xs-6 font-weight-bold" style="font-size: 90%;">Where did it?</td>
+                            <td class="col-xs-6" style="font-size: 90%;">{{complaint['where']}}</td>
+                        </tr>
+                        <!-- <tr *ngFor="let i of keys">
+                            <td class="col-xs-4 text-capitalize font-weight-bold" style="font-size: 90%;"> {{i}} </td>
+                            <td *ngIf="i !== 'date' else date" class="text-capitalize col" style="font-size: 90%;">
+                                {{complaint[i]}} </td>
+                            <ng-template #date>
+                                <td class="col" style="font-size: 90%;"> {{complaint[i] | date}} </td>
+                            </ng-template>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
