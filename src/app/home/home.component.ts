@@ -30,6 +30,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.db.list("data").valueChanges().subscribe(data => {
+      data.sort((a, b) =>{
+        return new Date(b.cdate) - new Date(a.cdate);
+      })
       this.complaints = data;
     })
   }
