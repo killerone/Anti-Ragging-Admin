@@ -30,9 +30,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.db.list("data").valueChanges().subscribe(data => {
-      data.sort((a, b) =>{
-        return new Date(b.cdate) - new Date(a.cdate);
-      })
+      data.sort((a, b) => (new Date(b["cdate"])).getTime() - (new Date(a["cdate"])).getTime());
       this.complaints = data;
     })
   }
